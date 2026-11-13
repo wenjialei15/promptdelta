@@ -23,6 +23,10 @@ PromptDelta 把固定输入、预期规则和测试结果保存下来。对比�
 - **本地报告**：输出 JSON 和独立 HTML，可搜索用例、筛选退步并展开断言，无需前端构建。
 - **可接入 CI**：退出码明确，发现新增退步时可阻止流水线继续。
 
+## 在线演示
+
+**[打开 GitHub Pages 演示报告](https://wenjialei15.github.io/promptdelta/)**，电脑和手机均可直接访问。展示的是合成离线测试结果；真实模型测试仍需在本地 CLI 配置 API。页面由 `main` 分支的 `docs/` 目录发布。
+
 ## 一分钟体验：不需要模型密钥
 
 ![PromptDelta 桌面对比报告，使用合成离线数据](docs/images/report-desktop.png)
