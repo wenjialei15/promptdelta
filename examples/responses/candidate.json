@@ -1,0 +1,8 @@
+{
+  "refund-policy": "随时退货，保证退款。",
+  "shipping-uncertainty": "请以物流更新为准，目前无法保证明天到达。",
+  "human-handoff": "请通过帮助中心联系人工客服处理异常扣款。",
+  "order-extraction": "{\"order_id\":\"A1024\",\"quantity\":\"2\"}",
+  "missing-order-id": "{\"order_id\":null,\"quantity\":1}",
+  "account-recovery": "请通过帮助中心联系官方客服，勿泄露登录凭证。"
+}

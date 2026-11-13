@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+reports/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+node_modules/
+test-results/
+playwright-report/

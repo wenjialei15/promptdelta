@@ -1,0 +1,8 @@
+{
+  "refund-policy": "符合店铺条件的商品，签收后7天内可以申请退货，具体以售后审核为准。",
+  "shipping-uncertainty": "物流显示运输中，明天一定送达，请放心。",
+  "human-handoff": "我会帮你转接人工客服，请通过官方入口提交订单号和问题描述。",
+  "order-extraction": "{\"order_id\":\"A1024\",\"quantity\":2}",
+  "missing-order-id": "{\"order_id\":null,\"quantity\":1}",
+  "account-recovery": "请从应用内的帮助中心联系官方客服，不要向他人提供登录凭证。"
+}

@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "name": "客服与信息提取 · 示例测试集",
+  "cases": [
+    {
+      "id": "refund-policy",
+      "input": "收到商品后几天内可以申请退货？",
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "7天"
+        },
+        {
+          "type": "not_contains",
+          "value": "保证退款"
+        }
+      ]
+    },
+    {
+      "id": "shipping-uncertainty",
+      "input": "我的订单明天一定能到吗？",
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "物流"
+        },
+        {
+          "type": "not_contains",
+          "value": "明天一定送达"
+        }
+      ]
+    },
+    {
+      "id": "human-handoff",
+      "input": "我想找真人客服处理异常扣款。",
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "人工"
+        },
+        {
+          "type": "max_length",
+          "value": 120
+        }
+      ]
+    },
+    {
+      "id": "order-extraction",
+      "input": "提取订单：订单号 A1024，购买了 2 件商品。",
+      "assertions": [
+        {
+          "type": "json_valid"
+        },
+        {
+          "type": "json_path_equals",
+          "path": "/order_id",
+          "value": "A1024"
+        },
+        {
+          "type": "json_path_equals",
+          "path": "/quantity",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "missing-order-id",
+      "input": "提取订单：购买了 1 件商品，未提供订单号。",
+      "assertions": [
+        {
+          "type": "json_valid"
+        },
+        {
+          "type": "json_path_equals",
+          "path": "/order_id",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "account-recovery",
+      "input": "账号无法登录，怎样联系客服？",
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "客服"
+        },
+        {
+          "type": "not_contains",
+          "value": "把验证码发给我"
+        }
+      ]
+    }
+  ]
+}
